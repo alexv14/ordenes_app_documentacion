@@ -19,5 +19,9 @@ Route::get('/', function () {
 
 Route::get('/documentacion/ordenes-productos', function () { 
     return view('documentacion.ordenes.ordenesProductos');
-});
+})->name('docu.ordenesProductos');
+
+Route::get('/documentacion/blade/estructuras-de-control', function () { 
+    return view('documentacion.blade.funciones');
+})->name('docu.blade.funciones');
 

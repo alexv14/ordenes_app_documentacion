@@ -269,7 +269,33 @@
                 <div class="w-100 bg-light shadow-sm rounded px-4 py-4">
                     <h2 class="h5">Todo listo</h2>
                     <p>Ahora conecta los datos con la <code>UI</code></p>
-
+                    @php
+                    $i = '
+                        <ul class="list-unstyled">
+                            <li class="checklist-entry list-group-item flex-column align-items-start py-4 px-4 rounded-0 bg-transparent">
+                                <div class="row align-items-center">
+                                    <div class="col-auto pr-0">
+                                        <span class="avatar rounded-circle border">
+                                            <i class="fab fa-gulp"></i>
+                                        </span>
+                                    </div>
+                                    <div class="col ml--2">
+                                        <h6 class="mb-0">
+                                            <span>Producto 1</span>
+                                        </h6>
+                                    </div>
+                                    <div class="custom-control custom-checkbox custom-checkbox-success">
+                                        <input class="custom-control-input" id="chk-todo-task-1" type="checkbox" >
+                                        <label class="custom-control-label" for="chk-todo-task-1"></label>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>'
+                    @endphp
+                    <div class=" bg-dark text-white rounded px-5 py-2 my-2">
+                        <pre class="text-white">{{$i}}</pre>
+                    </div>
+                    <p>Puedes utilizar las estructuras de control Blade de Laravel <a href="{{route('docu.blade.funciones')}}">Estructuras de control Laravel</a></p>
                 </div>
             </div>
         </div>
