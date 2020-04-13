@@ -295,7 +295,7 @@
                     <div class=" bg-dark text-white rounded px-5 py-2 my-2">
                         <pre class="text-white">{{$i}}</pre>
                     </div>
-                    <p>Puedes utilizar las estructuras de control Blade de Laravel <a href="{{route('docu.blade.funciones')}}">Estructuras de control Laravel</a></p>
+                    <p>Puedes utilizar las estructuras de control Blade de Laravel <a href="{{route('documentacion.blade.funciones')}}">Estructuras de control Laravel</a></p>
                 </div>
             </div>
         </div>

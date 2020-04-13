@@ -19,9 +19,19 @@ Route::get('/', function () {
 
 Route::get('/documentacion/ordenes-productos', function () { 
     return view('documentacion.ordenes.ordenesProductos');
-})->name('docu.ordenesProductos');
+})->name('documentacion.ordenesProductos');
+
+Route::get('/documentacion/crear-ordenes', function () { 
+    return view('documentacion.ordenes.crearOrdenes');
+})->name('documentacion.ordenesProductos');
 
 Route::get('/documentacion/blade/estructuras-de-control', function () { 
     return view('documentacion.blade.funciones');
-})->name('docu.blade.funciones');
+})->name('documentacion.blade.funciones');
+
+Route::get('/documentacion/seguridad/csrf', function () { 
+    return view('documentacion.common.csrftoken');
+})->name('documentacion.csrf-token');
+
+
 
